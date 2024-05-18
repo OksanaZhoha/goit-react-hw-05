@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
-import { fetchAboutFilms } from '../../movie-details-api';
+import { fetchAboutFilms } from '../../api-details-film';
 import css from './MovieDetailsPage.module.css';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';

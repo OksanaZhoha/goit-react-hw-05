@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchTrailerFilms } from '../../movie-trailer-api';
+import { fetchTrailerFilms } from '../../api-trailer-film';
 import Player from '../Player/Player';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';

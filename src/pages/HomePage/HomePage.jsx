@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchTrendingFilms } from '../../trending-movies-api';
+import { fetchTrendingFilms } from '../../api-trending-film';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';
 import MovieList from '../../components/MovieList/MovieList';
