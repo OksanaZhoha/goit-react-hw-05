@@ -14,8 +14,7 @@ export default function NotFoundPage() {
           src="https://static.vecteezy.com/system/resources/previews/026/987/683/original/single-continuous-line-drawing-woman-hiker-standing-near-direction-sign-or-pointer-girl-with-backpacks-searching-for-location-gets-lost-on-nature-one-line-draw-graphic-design-illustration-png.png"
           width={700}
           alt="Not found"
-              />
-              
+        />
         <Link className={css.btnHome} to="/">
           Home page
         </Link>
