@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
-import { fetchAboutFilms } from '../../api-details-film';
+import { fetchAboutFilms } from '../../movie-details-api';
 import css from './MovieDetailsPage.module.css';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';
@@ -30,6 +30,7 @@ export default function MovieDetailsPage() {
 
     fetchFilmDetails();
   }, [filmId]);
+
   if (!filmDetails) {
     return;
   }
@@ -44,6 +45,7 @@ export default function MovieDetailsPage() {
   return (
     <div>
       {loading && <Loading />}
+
       <Link className={css.backBtn} to={backLinkHref.current}>
         Go Back
       </Link>
