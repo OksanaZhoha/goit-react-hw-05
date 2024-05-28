@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchSearchFilms } from '../../api-search-film';
+import { fetchSearchFilms } from '../../movie-search-api';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';
 import MovieList from '../../components/MovieList/MovieList';
@@ -51,8 +51,7 @@ export default function MoviesPage() {
   const handleNext = () => {
     setPage(prewPage => prewPage + 1);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-    
+  };
   const handlePrev = () => {
     setPage(prewPage => prewPage - 1);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -71,8 +70,7 @@ export default function MoviesPage() {
         <button className={css.btnMovies} type="submit">
           Search
         </button>
-          </form>
-
+      </form>
       {loading && <Loading />}
 
       <MovieList films={films} />
