@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchAboutFilms } from '../../api-details-film';
+import { fetchAboutFilms } from '../../movie-details-api';
 import css from './MovieCast.module.css';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';
